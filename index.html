@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GKV Fresher's Guide</title>
+    <title>Gurukul Kangri (GKDU) Fresher's Guide</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
         :root {
-            --primary: #1E3A8A; /* Professional Navy Blue */
+            --primary: #1E3A8A; /* Navy Blue */
             --primary-light: #3B82F6;
             --background: #F8FAFC;
             --card-bg: #FFFFFF;
@@ -25,8 +25,6 @@
             padding: 40px 20px;
             display: flex;
             justify-content: center;
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
         }
 
         .container {
@@ -34,8 +32,8 @@
             width: 100%;
             background: var(--card-bg);
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             border-top: 8px solid var(--primary);
         }
 
@@ -43,27 +41,28 @@
             text-align: center;
             margin-bottom: 40px;
             border-bottom: 2px solid var(--accent);
-            padding-bottom: 20px;
+            padding-bottom: 25px;
         }
 
         .header h1 {
-            font-size: 2.4em;
+            font-size: 2.6em;
             color: var(--primary);
             margin: 0 0 10px 0;
+            letter-spacing: -0.5px;
         }
 
         .header p {
-            font-size: 1.1em;
+            font-size: 1.15em;
             color: var(--text-muted);
             margin: 0;
         }
 
         .section {
-            margin-bottom: 35px;
+            margin-bottom: 40px;
         }
 
         .section-title {
-            font-size: 1.4em;
+            font-size: 1.5em;
             color: var(--primary);
             margin-bottom: 20px;
             display: flex;
@@ -79,14 +78,20 @@
 
         .card {
             background: var(--background);
-            padding: 20px;
-            border-radius: 8px;
+            padding: 25px;
+            border-radius: 12px;
             border: 1px solid var(--accent);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
         .card h3 {
             margin: 0 0 15px 0;
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: var(--text-main);
         }
 
@@ -94,14 +99,19 @@
             display: inline-block;
             background: var(--primary);
             color: #FFFFFF;
-            padding: 10px 16px;
+            padding: 12px 20px;
             text-decoration: none;
-            border-radius: 6px;
-            font-size: 0.9em;
+            border-radius: 8px;
+            font-size: 0.95em;
             font-weight: 600;
             margin-bottom: 10px;
             margin-right: 10px;
             text-align: center;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
         }
 
         .btn-secondary {
@@ -141,29 +151,74 @@
         .tip-box {
             background: #F0F9FF;
             border-left: 4px solid var(--primary-light);
-            padding: 15px;
+            padding: 18px;
             border-radius: 0 8px 8px 0;
             margin-top: 15px;
-            font-size: 0.9em;
+            font-size: 0.95em;
             color: var(--text-muted);
+            line-height: 1.5;
         }
 
         .tip-box strong {
             color: var(--primary);
         }
 
-        @media print {
-            body { background: white; padding: 0; }
-            .container { box-shadow: none; border: none; padding: 0; }
+        .review-section {
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px dashed #93C5FD;
+            margin-top: 40px;
         }
+
+        .review-section h2 {
+            color: #1D4ED8;
+            margin-top: 0;
+        }
+
+        .review-section p {
+            color: #3B82F6;
+            margin-bottom: 20px;
+        }
+
+        .review-btn {
+            background: #2563EB;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+            transition: transform 0.2s;
+        }
+        
+        .review-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        .footer span {
+            color: #EF4444; /* Heart Color */
+        }
+
     </style>
 </head>
 <body>
 
     <div class="container">
         <div class="header">
-            <h1>Gurukula Kangri (GKDU)</h1>
-            <p>Essential Resource & Community Guide for Freshers</p>
+            <h1>Gurukul Kangri (GKDU)</h1>
+            <p>The Unofficial Resource & Community Guide for Freshers</p>
         </div>
 
         <div class="section">
@@ -179,8 +234,8 @@
             <div class="grid-2">
                 <div class="card">
                     <h3>Important Chat Groups</h3>
-                    <a href="https://ig.me/j/Aba-T25XhAHafBfQ/" class="btn">Join General Discussion</a>
-                    <a href="https://ig.me/j/AbYq82f0ZOMoNNI3/" class="btn btn-secondary">Join Girls Discussion</a>
+                    <a href="https://ig.me/j/Aba-T25XhAHafBfQ/" class="btn">👨🏽 Join Boys Discussion Group</a>
+                    <a href="https://ig.me/j/AbYq82f0ZOMoNNI3/" class="btn btn-secondary">👩🏽 Join Girls Discussion Group</a>
                 </div>
                 <div class="card">
                     <h3>Instagram Directory</h3>
@@ -199,7 +254,7 @@
             <div class="card">
                 <a href="https://share.google/G90iNCkTZpMHpG3pT" class="btn">Download FET Previous Year Papers</a>
                 <div class="tip-box">
-                    <strong>💡 Academic Tip:</strong> The first semester sets your trajectory. Securing an 8.5+ SGPA early on provides a massive advantage. For students in core branches like Electrical Engineering, focus heavily on mastering basic electronic components alongside your standard coursework.
+                    <strong>💡 Academic Tip:</strong> The first semester sets your trajectory. Securing a high SGPA early on provides a massive advantage. Focus heavily on mastering your core subjects and practicals right from the start.
                 </div>
             </div>
         </div>
@@ -210,9 +265,19 @@
                 <a href="https://maps.app.goo.gl/mDGiPte6tJTpeBtB7" class="btn">View Hostel Images</a>
                 <a href="https://maps.app.goo.gl/F7QrGuoJQ2ATgpur8" class="btn btn-secondary">View Campus Images</a>
                 <div class="tip-box">
-                    <strong>💡 Hostel Tip:</strong> Be self-reliant. Campus amenities can occasionally be inconsistent. It is highly recommended to bring your own dry snacks, basic utensils, and a reliable water purifying pitcher to ensure constant access to clean drinking water.
+                    <strong>💡 Hostel Tip:</strong> Be self-reliant! Campus amenities can sometimes be unpredictable. It is highly recommended to bring your own dry snacks, basic utensils, and a reliable water purifying pitcher to ensure constant access to clean drinking water.
                 </div>
             </div>
+        </div>
+
+        <div class="review-section">
+            <h2>⭐ Help Future Freshers!</h2>
+            <p>Are you a senior? Leave a review of the college, hostel, or share a survival tip for the incoming batch.</p>
+            <a href="https://forms.gle/s2w2vbcMQtyx6h8x5" class="review-btn" target="_blank">✍️ Submit Your Review & Tips</a>
+        </div>
+
+        <div class="footer">
+            <p>Crafted with <span>❤️</span> by your senior, Anurag</p>
         </div>
 
     </div>
